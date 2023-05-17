@@ -1,32 +1,20 @@
-def valuesAvailable():
-    print("here is the list of options you have")
-    print("a - Addition")
-    print("b - Subtraction")
-    print("c - multiplication")
-    print("d - division")
-    print("e - exit")
-    return str(input("Choose one option: "))
-operandva = valuesAvailable()
-if operandva == "a":
-    numberOne = int(input("enter first number: "))
-    numberTwo = int(input("enter second number: "))
-    print(numberOne+numberTwo)
-elif operandva == "b":
-    numberOne = int(input("enter first number: "))
-    numberTwo = int(input("enter second number: "))
-    print(numberOne-numberTwo)
-elif operandva == "c":
-    numberOne = int(input("enter first number: "))
-    numberTwo = int(input("enter second number: "))
-    print(numberOne*numberTwo)
-elif operandva == "d":
-    numberOne = int(input("enter first number: "))
-    numberTwo = int(input("enter second number: "))
-    print(numberOne/numberTwo)
-elif operandva == "e" :
-    print("you have exited successfully") 
+current_temp = int(input("Please input temprature in Fahrenheit: "))
+#print(current_temp)
+condition = str(input("Is it raining input Yes or No: "))
+raining = ("yes" == condition.lower())
+
+if current_temp < 50 :
+    print("Wear a coat, hat, scarf and gloves.")
+elif current_temp >= 50 and current_temp <= 70 and raining == (1==2):
+    print("Wear a sweater or light jacket ")
+elif current_temp >= 50 and current_temp <= 70 and raining == (1==1):
+    print("Wear a jacket and pair of boots ")
+elif current_temp > 70 and  raining == (1==2):
+    print("Wear a t-shirt and shorts ")
+elif current_temp > 70 and  raining == (1==1):
+    print("Wear a light jacket  and boots")  
 else:
-    valuesAvailable()
+    print("invalid input")
 
 
 

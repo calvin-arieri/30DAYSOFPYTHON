@@ -1,34 +1,34 @@
+def valuesAvailable():
+    print("here is the list of options you have")
+    print("a - Addition")
+    print("b - Subtraction")
+    print("c - multiplication")
+    print("d - division")
+    print("e - exit")
+    return str(input("Choose one option: "))
+operandva = valuesAvailable()
+if operandva == "a":
+    numberOne = int(input("enter first number: "))
+    numberTwo = int(input("enter second number: "))
+    print(numberOne+numberTwo)
 
+elif operandva == "b":
+    numberOne = int(input("enter first number: "))
+    numberTwo = int(input("enter second number: "))
+    print(numberOne-numberTwo)
 
-# ### Day 1: Python Basics
-# Start by installing Python and a text editor. Learn the basics of Python, such as: 
-#  variables, data types, Math Operators, Comments, Input() function, Print() function, The str(), int(), and float() Functions
+elif operandva == "c":
+    numberOne = int(input("enter first number: "))
+    numberTwo = int(input("enter second number: "))
+    print(numberOne*numberTwo)
 
-# #### Exercise
-# Simple Python Calculator Program: Write a simple program that does basic math operations including addition, subtraction, deletion, division, power, squareroot,etc,. 
-number_1 = int(input("enter a number: "))
-number_2 = int(input("enter second number: "))
+elif operandva == "d":
+    numberOne = int(input("enter first number: "))
+    numberTwo = int(input("enter second number: "))
+    print(numberOne/numberTwo)
 
-def sumFunction():
-    print("sum of numbers", number_1 + number_2)
+elif operandva == "e" :
+    print("you have exited successfully") 
 
-
-def differenceFunction():
-    print("subtraction of numbers", number_1 - number_2)
-
-def divisionFunction():
-    print("divide two numbers", int(number_1/number_2))
-
-def powerFunction():
-    print("powering the two numbers", pow(number_1, number_2))
-
-def deletionFunction():
-    number_1 = 0
-    number_2 = 0
-    print("number 1 deleted", number_1)
-    print("number 2 deleted", number_2)
-powerFunction()                 
-divisionFunction()    
-sumFunction()
-differenceFunction()  
-deletionFunction()  
+else:
+    valuesAvailable() 
